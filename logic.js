@@ -30,9 +30,9 @@ function createFeatures(earthquakeData){
       }
       createMap(earthquakeMarkers);
 }
-
+// need to enter api token in the "var darkmap" line of code.
 function createMap(earthquakeMarkers) {
-    var darkmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamFtZXNraS1kIiwiYSI6ImNrYzE1OHJkbTFxZ3cyc3FkazBnYjZycG0ifQ.v8Io_88x1OMa6Pwt5Oj4tA");
+    var darkmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?access_token=******API_TOKEN_HERE******");
     var baseMaps = {
         "Dark Map": darkmap
     };
